@@ -73,3 +73,7 @@ Implemented in FastAPI:
 - Docker-ready with isolated backend/frontend services.
 
 See `docs/architecture.md` and `docs/database.md` for deeper implementation details.
+
+## Additional Project Docs
+
+- `docs/project2_automated_email_sender.md`: Automated email sender implementation, scheduling, and usage guide.
