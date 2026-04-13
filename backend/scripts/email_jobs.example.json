@@ -1,0 +1,46 @@
+{
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "username": "automation@example.com",
+    "password": "replace-with-app-password",
+    "use_tls": true,
+    "from_email": "automation@example.com"
+  },
+  "jobs": [
+    {
+      "send_at": "2026-01-01T12:00:00+00:00",
+      "subject_template": "Update for {name}: {purpose}",
+      "body_template": "Hello {name},\n\nThis is your scheduled message about {purpose}.\nOwner: {account_manager}\nAction: {action_item}\n\nRegards,\nAutomation Bot",
+      "recipients": [
+        {
+          "name": "Alex Chen",
+          "email": "alex.chen@example.com",
+          "purpose": "Quarterly account review",
+          "context": {
+            "account_manager": "Priya",
+            "action_item": "Please confirm your preferred meeting slot"
+          }
+        },
+        {
+          "name": "Jordan Smith",
+          "email": "jordan.smith@example.com",
+          "purpose": "Contract renewal",
+          "context": {
+            "account_manager": "Diego",
+            "action_item": "Sign the digital renewal packet"
+          }
+        },
+        {
+          "name": "Taylor Brown",
+          "email": "taylor.brown@example.com",
+          "purpose": "Weekly project summary",
+          "context": {
+            "account_manager": "Mei",
+            "action_item": "Review attachment and share feedback"
+          }
+        }
+      ]
+    }
+  ]
+}
